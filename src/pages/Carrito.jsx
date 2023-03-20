@@ -6,7 +6,7 @@ export default function Carrito() {
 
   const clearCart=()=>{
     setShopCart([]);
-    setShopCartTotal(0)
+    setShopCartTotal(0);
   }
 
   return (
@@ -63,8 +63,8 @@ export default function Carrito() {
            : (
             <h3>No tienes ítems en el Carrito</h3>
           )}
-          <div className="w-100 d-flex justify-content-end align-items-end">
-           <button className="btn btn-danger" onClick={clearCart}>Vaciar el Carrito ❌</button>
+          <div className="w-100 d-flex justify-content-end align-items-center">
+           <button className="btn btn-warning" onClick={clearCart}>Limpiar Carrito</button>
           </div>
         </div>
       </div>
